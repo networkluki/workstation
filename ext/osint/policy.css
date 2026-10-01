@@ -1,0 +1,349 @@
+/* Privacy policy page for Usage Overlay for Claude.
+   Palette matches /assets/css/custom.css (dark default), with a light variant. */
+
+:root {
+  --bg: #000;
+  --surface: #0d0c0a;
+  --text: #f2ede4;
+  --muted: #9a9186;
+  --line: #2c2822;
+  --accent: #d9b96a;
+  --code-bg: #15130f;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #faf8f4;
+    --surface: #fff;
+    --text: #1d1b17;
+    --muted: #625a50;
+    --line: #e2dcd1;
+    --accent: #8a6a1c;
+    --code-bg: #f1ede5;
+    color-scheme: light;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.policy {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 8vw, 5rem) 1.25rem 3rem;
+}
+
+/* Header */
+
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 2rem;
+  padding: 0;
+}
+
+.tags li {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.updated {
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.lead {
+  margin: 1.75rem 0 0;
+  font-size: 1.1rem;
+}
+
+.notice {
+  margin: 0.75rem 0 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* At-a-glance summary */
+
+.summary {
+  margin: 2.5rem 0 1rem;
+}
+
+.summary dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 1px;
+  margin: 0;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.summary dl > div {
+  background: var(--surface);
+  padding: 1rem 1.1rem;
+}
+
+.summary dt {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.summary dd {
+  margin: 0.35rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* Sections */
+
+section:not(.summary) {
+  padding: 2rem 0 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin: 0 0 0.9rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--accent);
+}
+
+p {
+  margin: 0;
+}
+
+ul:not(.tags) {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+p + ul:not(.tags) {
+  margin-top: 0.9rem;
+}
+
+.after-list {
+  margin-top: 1rem;
+}
+
+ul:not(.tags) li + li {
+  margin-top: 0.75rem;
+}
+
+ul:not(.tags) li::marker {
+  color: var(--accent);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.05em 0.35em;
+  overflow-wrap: anywhere;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--muted);
+  transition: border-color 0.15s ease, color 0.15s ease;
+  overflow-wrap: anywhere;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Tables */
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.7rem 1rem;
+}
+
+thead th {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+tbody tr + tr td {
+  border-top: 1px solid var(--line);
+}
+
+td:first-child {
+  white-space: nowrap;
+}
+
+/* Extension cards (index page) */
+
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.25rem 1.25rem 1.1rem;
+}
+
+.card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.75rem;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card .path {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+.card .badge {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+}
+
+.card p {
+  margin-top: 0.6rem;
+}
+
+.card .meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.card .more {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+
+.policy-foot {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a {
+    transition: none;
+  }
+}

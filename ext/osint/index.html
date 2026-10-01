@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Privacy policy for Forensic OSINT, a Chrome and Firefox extension that analyzes the current page for risk indicators and takes screenshots. Reports stay in your browser; no network requests.">
+  <title>Privacy Policy – Forensic OSINT</title>
+  <link rel="canonical" href="https://networkluki.com/ext/osint/">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/imgs/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/imgs/icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="/assets/imgs/icons/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="stylesheet" href="policy.css">
+</head>
+<body>
+
+<main class="policy">
+
+  <header class="policy-head">
+    <ul class="tags">
+      <li>Chrome</li>
+      <li>Firefox</li>
+      <li>Browser extension</li>
+      <li>OSINT</li>
+    </ul>
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Forensic OSINT</h1>
+    <p class="updated">Last updated: <time datetime="2026-09-28">2026-09-28</time></p>
+    <p class="lead">
+      Forensic OSINT (&ldquo;the extension&rdquo;) is a browser extension for Chrome and Firefox
+      that analyzes the web page in the current tab for risk indicators, collects information
+      from it and takes screenshots, for your own open-source intelligence (OSINT) work.
+    </p>
+  </header>
+
+  <section class="summary" aria-labelledby="summary-title">
+    <h2 id="summary-title" class="visually-hidden">Summary</h2>
+    <dl>
+      <div>
+        <dt>Page access</dt>
+        <dd>Only when you click</dd>
+      </div>
+      <div>
+        <dt>Data sent to the developer</dt>
+        <dd>None</dd>
+      </div>
+      <div>
+        <dt>Analytics, tracking, ads</dt>
+        <dd>None</dd>
+      </div>
+      <div>
+        <dt>Network requests</dt>
+        <dd>None</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section aria-labelledby="s-access">
+    <h2 id="s-access"><span class="num">01</span>What the extension accesses</h2>
+    <p>
+      The extension accesses a page only when you click &ldquo;Analyze this page&rdquo; in its
+      toolbar popup, and then only the tab that was active when you opened the popup. It has no
+      access to any other page. From that tab it reads:
+    </p>
+    <ul>
+      <li>
+        the page address, title, language, metadata (such as description, author and generator)
+        and the canonical address;
+      </li>
+      <li>
+        the addresses of links, scripts, stylesheets, frames and form targets, the structure of
+        forms (target address, method and field types) and the text of links;
+      </li>
+      <li>email addresses and phone numbers that appear in the page&rsquo;s links or text;</li>
+      <li>the names of cookies that the page&rsquo;s own scripts can read (never cookie values);</li>
+      <li>
+        a screenshot of the visible part of the tab and, if you choose full-page capture, a
+        screenshot of the whole page.
+      </li>
+    </ul>
+    <p class="after-list">
+      It never reads what is typed into form fields, passwords, cookie values or browser history.
+      It does not track your browsing and does nothing in the background.
+    </p>
+    <p class="notice">
+      Screenshots contain whatever the tab shows, which can include personal data, for example
+      your own account details on a page you are signed in to.
+    </p>
+  </section>
+
+  <section aria-labelledby="s-use">
+    <h2 id="s-use"><span class="num">02</span>How the data is used</h2>
+    <p>
+      Only to build the report that you see: risk indicators, the collected information, the
+      screenshots with their SHA-256 hashes, and pivot links.
+    </p>
+  </section>
+
+  <section aria-labelledby="s-storage">
+    <h2 id="s-storage"><span class="num">03</span>Where the data is stored</h2>
+    <p>
+      Reports are stored locally in your browser&rsquo;s extension storage (IndexedDB) in the
+      current browser profile. Besides the information above, each report records when it was
+      made, the extension version, your browser&rsquo;s user agent string and time zone (to
+      document how and when the evidence was captured), and any note you write. The 10 newest
+      reports are kept and older ones are deleted automatically. You can delete a report at any
+      time from the report page, and all reports are removed when you uninstall the extension.
+      The extension also stores your full-page capture setting locally.
+    </p>
+    <p>
+      When you export a report (HTML, JSON or PNG), the file is saved where you choose. What
+      happens to exported files is up to you.
+    </p>
+  </section>
+
+  <section aria-labelledby="s-sharing">
+    <h2 id="s-sharing"><span class="num">04</span>Sharing</h2>
+    <p>
+      The extension sends no data to the developer or to any third party. It contains no
+      analytics, tracking or advertising, uses no servers of its own and makes no network
+      requests.
+    </p>
+    <p>
+      The report page contains pivot links to third-party services (Internet Archive Wayback
+      Machine, crt.sh, rdap.org, Google Public DNS, VirusTotal, urlscan.io and the Google
+      Transparency Report). Nothing is sent to them unless you click one of these links. The
+      link then opens that service in a new tab and passes it the analyzed page&rsquo;s domain,
+      IP address or address. That service&rsquo;s own privacy policy then applies.
+    </p>
+  </section>
+
+  <section aria-labelledby="s-permissions">
+    <h2 id="s-permissions"><span class="num">05</span>Permissions</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Permission</th>
+            <th scope="col">Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>activeTab</code></td>
+            <td>Access to the current tab only, and only after you click the toolbar button</td>
+          </tr>
+          <tr>
+            <td><code>scripting</code></td>
+            <td>Read the page&rsquo;s information in that tab when you click &ldquo;Analyze this page&rdquo;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="s-limited">
+    <h2 id="s-limited"><span class="num">06</span>Limited Use</h2>
+    <p>
+      The use of information received from web pages adheres to the
+      <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" rel="noopener noreferrer">Chrome Web Store User Data Policy</a>,
+      including the Limited Use requirements.
+    </p>
+  </section>
+
+  <section aria-labelledby="s-changes">
+    <h2 id="s-changes"><span class="num">07</span>Changes</h2>
+    <p>
+      Changes to this policy are published at this address with a new &ldquo;Last updated&rdquo; date.
+    </p>
+  </section>
+
+  <section aria-labelledby="s-contact">
+    <h2 id="s-contact"><span class="num">08</span>Contact</h2>
+    <p>
+      <a href="https://github.com/networkluki" rel="noopener noreferrer">github.com/networkluki</a>
+    </p>
+  </section>
+
+  <footer class="policy-foot">
+    <a href="/">networkluki.com</a>
+  </footer>
+
+</main>
+
+</body>
+</html>

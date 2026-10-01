@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Privacy policy for Usage Overlay for Claude, an unofficial Chrome and Firefox extension that shows your Claude plan usage limits. No data leaves your browser.">
+  <title>Privacy Policy – Usage Overlay for Claude</title>
+  <link rel="canonical" href="https://networkluki.com/ext/c/">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/imgs/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/imgs/icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="/assets/imgs/icons/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="stylesheet" href="policy.css">
+</head>
+<body>
+
+<main class="policy">
+
+  <header class="policy-head">
+    <ul class="tags">
+      <li>Chrome</li>
+      <li>Firefox</li>
+      <li>Browser extension</li>
+    </ul>
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Usage Overlay for Claude</h1>
+    <p class="updated">Last updated: <time datetime="2026-09-28">2026-09-28</time></p>
+    <p class="lead">
+      Usage Overlay for Claude (&ldquo;the extension&rdquo;) is an unofficial browser extension for
+      Chrome and Firefox that shows your Claude plan usage limits.
+    </p>
+    <p class="notice">It is not affiliated with or endorsed by Anthropic.</p>
+  </header>
+
+  <section class="summary" aria-labelledby="summary-title">
+    <h2 id="summary-title" class="visually-hidden">Summary</h2>
+    <dl>
+      <div>
+        <dt>Data sent to the developer</dt>
+        <dd>None</dd>
+      </div>
+      <div>
+        <dt>Data sent to third parties</dt>
+        <dd>None</dd>
+      </div>
+      <div>
+        <dt>Analytics, tracking, ads</dt>
+        <dd>None</dd>
+      </div>
+      <div>
+        <dt>Network requests</dt>
+        <dd>claude.ai only</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section aria-labelledby="s-access">
+    <h2 id="s-access"><span class="num">01</span>What the extension accesses</h2>
+    <ul>
+      <li>
+        When you are signed in to claude.ai, the extension requests
+        <code>https://claude.ai/api/organizations</code> and
+        <code>https://claude.ai/api/organizations/{id}/usage</code>.
+        The responses contain your organizations&rsquo; identifiers and names, your usage
+        percentages and reset times, and, if extra usage is enabled on your account, the
+        amount of extra usage spent and its monthly limit.
+      </li>
+      <li>
+        These requests are made by your browser with your existing claude.ai session.
+        The extension does not read, store or transmit your cookies, passwords or other
+        credentials.
+      </li>
+      <li>
+        The extension does not read your conversations or any other page content on claude.ai.
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="s-use">
+    <h2 id="s-use"><span class="num">02</span>How the data is used</h2>
+    <p>Only to show your usage in the toolbar badge, the popup and the overlay on claude.ai.</p>
+  </section>
+
+  <section aria-labelledby="s-storage">
+    <h2 id="s-storage"><span class="num">03</span>Where the data is stored</h2>
+    <p>
+      The latest usage figures and your settings are stored locally in your browser&rsquo;s
+      extension storage. The figures are replaced on each refresh, and all stored data is
+      removed when you uninstall the extension.
+    </p>
+  </section>
+
+  <section aria-labelledby="s-sharing">
+    <h2 id="s-sharing"><span class="num">04</span>Sharing</h2>
+    <p>
+      The extension sends no data to the developer or to any third party. It contains no
+      analytics, tracking or advertising and uses no servers of its own. Its only network
+      requests go to claude.ai.
+    </p>
+  </section>
+
+  <section aria-labelledby="s-limited">
+    <h2 id="s-limited"><span class="num">05</span>Limited Use</h2>
+    <p>
+      The use of information received from claude.ai adheres to the
+      <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" rel="noopener noreferrer">Chrome Web Store User Data Policy</a>,
+      including the Limited Use requirements.
+    </p>
+  </section>
+
+  <section aria-labelledby="s-changes">
+    <h2 id="s-changes"><span class="num">06</span>Changes</h2>
+    <p>
+      Changes to this policy are published at this address with a new &ldquo;Last updated&rdquo; date.
+    </p>
+  </section>
+
+  <section aria-labelledby="s-contact">
+    <h2 id="s-contact"><span class="num">07</span>Contact</h2>
+    <p>
+      Questions about this policy:
+      <a href="mailto:dev.networkluki@gmail.com">dev.networkluki@gmail.com</a>
+    </p>
+  </section>
+
+  <footer class="policy-foot">
+    <a href="/">networkluki.com</a>
+  </footer>
+
+</main>
+
+</body>
+</html>
