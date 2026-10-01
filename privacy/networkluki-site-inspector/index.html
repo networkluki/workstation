@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NetworkLuki Site Inspector – Privacy Policy</title>
+    <meta name="description" content="Privacy policy for NetworkLuki Site Inspector Chrome extension.">
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0b1020;
+            --panel: #121a33;
+            --panel2: #172143;
+            --text: #f4f7ff;
+            --muted: #b8c2d9;
+            --border: rgba(255, 255, 255, .12);
+            --accent: #7c5cff;
+            --good: #65d58b;
+            --warn: #ffd166;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.65;
+            background:
+                radial-gradient(circle at top left, rgba(124, 92, 255, .28), transparent 36rem),
+                linear-gradient(135deg, var(--bg), #050816);
+            color: var(--text);
+        }
+
+        main {
+            width: min(960px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 56px 0;
+        }
+
+        header {
+            margin-bottom: 28px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .06);
+            color: var(--good);
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        h1 {
+            margin: 18px 0 8px;
+            font-size: clamp(34px, 5vw, 58px);
+            line-height: 1.05;
+            letter-spacing: -.04em;
+        }
+
+        h2 {
+            margin: 0 0 12px;
+            font-size: 24px;
+        }
+
+        p {
+            margin: 0 0 14px;
+            color: var(--muted);
+        }
+
+        a {
+            color: #9db7ff;
+        }
+
+        .lead {
+            max-width: 760px;
+            font-size: 20px;
+            color: #dce5ff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            margin: 26px 0;
+        }
+
+        section,
+        .summary {
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            background: rgba(18, 26, 51, .82);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .25);
+            padding: 24px;
+        }
+
+        .summary {
+            background: linear-gradient(135deg, rgba(124, 92, 255, .18), rgba(23, 33, 67, .82));
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--muted);
+        }
+
+        li + li {
+            margin-top: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: rgba(255, 255, 255, .07);
+            color: var(--text);
+        }
+
+        td {
+            color: var(--muted);
+        }
+
+        tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .status-good {
+            color: var(--good);
+            font-weight: 800;
+        }
+
+        .status-warn {
+            color: var(--warn);
+            font-weight: 800;
+        }
+
+        footer {
+            margin-top: 28px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        code {
+            padding: 2px 6px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, .08);
+            color: #e8edff;
+        }
+
+        @media (max-width: 760px) {
+            main {
+                padding: 32px 0;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            section,
+            .summary {
+                padding: 20px;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <span class="badge">No tracking · No external data collection</span>
+        <h1>NetworkLuki Site Inspector Privacy Policy</h1>
+        <p class="lead">
+            This privacy policy explains what data the Chrome extension handles, how it is used,
+            and why no user data is collected, sold, shared, or transferred by NetworkLuki.
+        </p>
+        <p>Effective date: 2026-05-11</p>
+    </header>
+
+    <div class="summary">
+        <h2>Short summary</h2>
+        <p>
+            NetworkLuki Site Inspector is designed to inspect the currently active browser tab
+            and show basic browser-observed site information such as URL, origin, hostname,
+            protocol, HTTPS status, and simple security signals.
+        </p>
+        <ul>
+            <li>No account is required.</li>
+            <li>No analytics, ads, trackers, or third-party scripts are used.</li>
+            <li>No personal data is sold or shared.</li>
+            <li>No page content, form fields, passwords, cookies, or browsing history are collected.</li>
+            <li>The extension does not transmit inspection data to NetworkLuki servers in this version.</li>
+        </ul>
+    </div>
+
+    <div class="grid">
+        <section>
+            <h2>Data collection</h2>
+            <p>
+                NetworkLuki does not collect user data through this extension.
+                The extension works locally in the user's browser and only processes the active tab
+                after the user opens the extension.
+            </p>
+            <p>
+                The active tab URL may be read locally to display technical information to the user.
+                This information is not sent to NetworkLuki or to any third party.
+            </p>
+        </section>
+
+        <section>
+            <h2>Data use</h2>
+            <p>
+                The extension uses active-tab information only for its single purpose:
+                showing a local site inspection report for the page the user is currently viewing.
+            </p>
+            <p>
+                The extension does not use data for advertising, profiling, credit decisions,
+                unrelated analytics, or user tracking.
+            </p>
+        </section>
+
+        <section>
+            <h2>Data sharing</h2>
+            <p>
+                NetworkLuki does not sell, rent, transfer, or share user data collected through
+                this extension because the extension does not collect such data.
+            </p>
+            <p>
+                No inspection data is transmitted to external servers in this version.
+            </p>
+        </section>
+
+        <section>
+            <h2>Local storage</h2>
+            <p>
+                If the extension version uses Chrome local storage, it is used only to keep the latest
+                inspection report locally inside the user's browser.
+            </p>
+            <p>
+                Locally stored data is not transmitted to NetworkLuki or third parties.
+                Users can remove extension data by removing the extension or clearing browser extension storage.
+            </p>
+        </section>
+    </div>
+
+    <section>
+        <h2>Data categories</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Explanation</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Personally identifiable information</td>
+                <td class="status-good">Not collected</td>
+                <td>No name, address, email address, age, or personal identifier is collected.</td>
+            </tr>
+            <tr>
+                <td>Health information</td>
+                <td class="status-good">Not collected</td>
+                <td>No health, medical, symptom, or treatment information is collected.</td>
+            </tr>
+            <tr>
+                <td>Financial and payment information</td>
+                <td class="status-good">Not collected</td>
+                <td>No payment card, credit, bank, or transaction information is collected.</td>
+            </tr>
+            <tr>
+                <td>Authentication information</td>
+                <td class="status-good">Not collected</td>
+                <td>No passwords, credentials, security questions, or PINs are collected.</td>
+            </tr>
+            <tr>
+                <td>Personal communications</td>
+                <td class="status-good">Not collected</td>
+                <td>No emails, SMS messages, chats, or private communications are collected.</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td class="status-good">Not collected</td>
+                <td>No GPS coordinates, region, or device location is collected.</td>
+            </tr>
+            <tr>
+                <td>Web history</td>
+                <td class="status-warn">Not collected by NetworkLuki</td>
+                <td>The extension may read the current active tab URL locally when the user opens it. It does not collect or transmit browsing history.</td>
+            </tr>
+            <tr>
+                <td>User activity</td>
+                <td class="status-good">Not collected</td>
+                <td>No clicks, mouse movement, scrolling, keystrokes, or interaction tracking is collected.</td>
+            </tr>
+            <tr>
+                <td>Website content</td>
+                <td class="status-good">Not collected</td>
+                <td>No page text, images, videos, links, form fields, or DOM content is collected.</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section style="margin-top: 16px;">
+        <h2>Permissions</h2>
+        <p>
+            The extension may request the following Chrome permissions:
+        </p>
+        <ul>
+            <li>
+                <code>activeTab</code>:
+                used only when the user clicks the extension icon, so the extension can inspect
+                the currently active tab URL and show the report.
+            </li>
+            <li>
+                <code>storage</code>:
+                used only if the extension keeps the latest inspection report locally in the browser.
+                It is not used for external collection or tracking.
+            </li>
+        </ul>
+    </section>
+
+    <section style="margin-top: 16px;">
+        <h2>Changes to this policy</h2>
+        <p>
+            This privacy policy may be updated if the extension changes.
+            If future versions add server-side DNS checks, HTTP header checks, analytics,
+            accounts, or any data transfer, this policy and the Chrome Web Store data disclosures
+            must be updated before release.
+        </p>
+    </section>
+
+    <section style="margin-top: 16px;">
+        <h2>Contact</h2>
+        <p>
+            For privacy questions, contact:
+            <a href="mailto:dev.networkluki@gmail.com">
+                dev.networkluki@gmail.com
+            </a>
+        </p>
+        <p>
+            Website:
+            <a href="https://networkluki.com">
+                https://networkluki.com
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>
+            This page is provided for Chrome Web Store privacy disclosure purposes.
+            It is not legal advice.
+        </p>
+    </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ipconfig.se IP &amp; Site Inspector Privacy Policy</title>
+<style>
+body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;color:#f5f7ff;background:linear-gradient(135deg,#07101f,#050816)}
+main{width:min(960px,calc(100% - 32px));margin:0 auto;padding:56px 0}
+section{margin-top:16px;padding:24px;border:1px solid rgba(255,255,255,.13);border-radius:22px;background:#111a30}
+p,li,td{color:#b8c3d9}.badge{display:inline-block;padding:8px 12px;border:1px solid rgba(255,255,255,.13);border-radius:999px;color:#66d98f;background:rgba(255,255,255,.06);font-weight:800}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.05;letter-spacing:-.04em}code{padding:2px 6px;border-radius:8px;background:rgba(255,255,255,.08);color:#e8edff}a{color:#9db7ff}
+</style>
+</head>
+<body>
+<main>
+<header>
+<span class="badge">No ads · No analytics · No sale of user data</span>
+<h1>ipconfig.se IP &amp; Site Inspector Privacy Policy</h1>
+<p>Effective date: 2026-05-11</p>
+</header>
+
+<section>
+<h2>Summary</h2>
+<p>This extension lets users view their public IP address and inspect the currently active site using ipconfig.se resolver endpoints.</p>
+<p>The extension does not use ads, analytics, third-party trackers, accounts, or extension-side user profiling. It does not read page content, form fields, cookies, passwords, or personal communications.</p>
+</section>
+
+<section>
+<h2>Data processed</h2>
+<ul>
+<li><strong>Public IP lookup:</strong> ipconfig.se receives the user's public IP as part of the request to <code>/ip.json</code>.</li>
+<li><strong>DNS lookup:</strong> the active site's hostname is sent to <code>/dns.json</code> when the user runs external checks.</li>
+<li><strong>External HEAD check:</strong> the active site's origin, such as <code>https://example.com</code>, is sent to <code>/headers.json</code>. The extension does not send the full page path or query string.</li>
+</ul>
+</section>
+
+<section>
+<h2>What is not collected</h2>
+<ul>
+<li>No page text, images, videos, DOM content, form fields, cookies, passwords, authentication tokens, private messages, or personal communications are read.</li>
+<li>No click tracking, mouse tracking, keystroke logging, behavioral analytics, ads, or credit-decision use occurs.</li>
+<li>No Chrome local storage is used in this extension version.</li>
+</ul>
+</section>
+
+<section>
+<h2>Data sharing</h2>
+<p>The extension communicates only with ipconfig.se endpoints needed for its single purpose. Data is not sold or shared with third-party advertising, analytics, or profiling services.</p>
+<p>Standard server infrastructure may process HTTP requests to operate the service and protect against abuse.</p>
+</section>
+
+<section>
+<h2>Permissions</h2>
+<ul>
+<li><code>activeTab</code>: used when the user opens the extension to read the current tab URL, host, and HTTPS status.</li>
+<li><code>https://ipconfig.se/*</code>: used to call ipconfig.se IP, DNS, and header endpoints.</li>
+</ul>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:support@networkluki.com">support@networkluki.com</a></p>
+</section>
+</main>
+</body>
+</html>
